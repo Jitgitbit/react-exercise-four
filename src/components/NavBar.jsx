@@ -2,7 +2,7 @@ import React from 'react'
 import {Link, NavLink, withRouter} from 'react-router-dom';
 
 function NavBar(props) {
-  console.log(props)
+  console.log(`=========>> PROPS IN NavBar:`,props)
   // setTimeout(() => {
   //   props.history.push('/about')
   // }, 2000);
@@ -22,4 +22,4 @@ function NavBar(props) {
     </nav>
   )
 }
-export default withRouter(NavBar);
+export default withRouter(NavBar); // <<=== REMEMBER THIS FOR ADDING HISTORY TO A ROUTELESS COMPONENT!!!

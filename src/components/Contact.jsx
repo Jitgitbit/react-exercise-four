@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Contact(props) {
-  console.log(props);
+  console.log(`=========>> PROPS IN Contact:`,props)
   // setTimeout(() => {
   //   props.history.push('/about')
   // }, 2000);
