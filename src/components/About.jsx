@@ -1,6 +1,7 @@
 import React from 'react'
+import Rainbow from '../hoComponents/Rainbow'
 
-export default function About() {
+function About() {
   return (
     <div className='container'>
       <h4 className="center">About</h4>
@@ -10,3 +11,4 @@ export default function About() {
     </div>
   )
 }
+export default Rainbow(About);
