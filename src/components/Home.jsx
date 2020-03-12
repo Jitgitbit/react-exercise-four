@@ -21,11 +21,11 @@ export default class Home extends Component {
     const postList = posts.length ? (
       posts.map(post => {
         return (
-          <div className="post card" key={post.id}>
-            <img src={phoenixLogo} alt="A Phoenix" style={{width:'50px', height:'50px'}}/>
-            <div className="card-content">
+          <div className="post card teal lighten-5" key={post.id}>
+            <img src={phoenixLogo} alt="A Phoenix" />
+            <div className="card-content ">
               <Link to={'/' + post.id}>
-                <span className="card-title">{post.title}</span>
+                <span className="card-title red-text">{post.title}</span>
               </Link>
               <p>{post.body}</p>
             </div>
@@ -36,7 +36,7 @@ export default class Home extends Component {
       <div className="center">No posts yet</div>
     )
     return (
-      <div className='container'>
+      <div className='container home '>
         <h4 className="center">Home</h4>
         {postList}
       </div>
