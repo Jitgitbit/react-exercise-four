@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import phoenixLogo from '../images/phoenixLogo.png'
 
 export default class Home extends Component {
   state ={
@@ -21,6 +22,7 @@ export default class Home extends Component {
       posts.map(post => {
         return (
           <div className="post card" key={post.id}>
+            <img src={phoenixLogo} alt="A Phoenix" style={{width:'50px', height:'50px'}}/>
             <div className="card-content">
               <Link to={'/' + post.id}>
                 <span className="card-title">{post.title}</span>
